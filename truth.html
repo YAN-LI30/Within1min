@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+@font-face {
+    font-family:tytle ;
+    src: url(fangzheng.TTF);
+}
+    .whole{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    width: 75vw;
+    height: 70vh;
+}   
+    body{    
+    font-family: tytle;
+    font-size: 30px;
+    color: black;
+    margin: 2vh;
+}
+
+@media only screen and (max-width:900px){
+    .whole{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    width: 75vw;
+    height: 35vh;
+}  
+    body{
+        font-size: 12px;
+    }
+}
+img {
+    display: block;
+}
+.mana {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.torso {
+    height: 0px;
+}
+.mana:hover .torso {
+    height: auto;
+    cursor:zoom-in;
+}
+a{
+            font-family: tytle;
+            font-size: 2vh;
+            color:rgb(207, 207, 207)
+        }
+
+</style>
+<body>
+<h1 >Who Stole The Diamond?</h1>
+<p >There is only one person telling the truth ↓</p>
+<center>
+<div class="whole">
+    <div class="mana">
+        <img src="truth/parts_A1.svg">
+        <img src="truth/parts_A2.svg" class="torso">
+        <img src="truth/parts_A3.svg">
+    </div>
+    <div class="mana">
+        <img src="truth/parts_B1.svg">
+        <img src="truth/parts_B2.svg" class="torso">
+        <img src="truth/parts_B3.svg">
+    </div>
+    <div class="mana">
+        <img src="truth/parts_C1.svg">
+        <img src="truth/parts_C2.svg" class="torso">
+        <img src="truth/parts_C3.svg">
+    </div>
+    <div class="mana">
+        <img src="truth/parts_D1.svg">
+        <img src="truth/parts_D2.svg" class="torso">
+        <img src="truth/parts_D3.svg">
+    </div>
+</div>  
+</center>
+</body>
+<a href="index.html">← Try other games</a>
+</html>
